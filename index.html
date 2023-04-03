@@ -134,12 +134,43 @@
           border-radius: 5px;
           z-index: 10000;
         }
+        nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 10px;
+        }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+        }
+
+nav a {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.2s ease-in-out;
+        }
+
+nav a:hover {
+  color: white;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1 class="logo">Ari</h1>
         <label id="output-label" class="output-label"></label>
+         <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
     </header>
     <main class="gallery">
        
